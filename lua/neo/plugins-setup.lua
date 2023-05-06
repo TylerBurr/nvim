@@ -15,7 +15,7 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
   augro up end
 ]])
 
@@ -28,6 +28,20 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'bluz71/vim-nightfly-guicolors'
   use 'nvim-tree/nvim-tree.lua'
+  
+  -- treesitter configuration
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+      ts_update()
+    end,
+  })
+
+    -- auto closing
+  use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
