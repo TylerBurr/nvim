@@ -2,11 +2,13 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+-- require("nvim-tree").setup()
 
 -- OR setup with some options
 require("nvim-tree").setup({
