@@ -25,17 +25,27 @@ if not status then
 end
 
 return require('packer').startup(function(use)
+  -- Packer Plugin Manager
   use 'wbthomason/packer.nvim'
-  use 'bluz71/vim-nightfly-guicolors'
+
+  -- Color Theme
+  use "rebelot/kanagawa.nvim"
+  
+  -- NVIM treesitter
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
+  
+  -- bottom bar
   use 'vim-airline/vim-airline'
+
+
   -- Find Files
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.1',
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+
   -- treesitter configuration
   use({
     "nvim-treesitter/nvim-treesitter",
@@ -79,9 +89,6 @@ end}
       { "nvim-treesitter/nvim-treesitter" },
     },
   }) -- enhanced lsp uis
-
-
-
 
   if packer_bootstrap then
     require('packer').sync()
