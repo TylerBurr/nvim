@@ -52,5 +52,5 @@ plugin/packer_compiled.lua
 !lua/core/*
 !lua/plugins/*
 !lua/configs/*
-
+!lua/plugins/lsp/*
 
