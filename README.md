@@ -1,6 +1,6 @@
 # nvim
-NeoVim Config
- 
+![alt text](https://github.com/TylerBurr/nvim/assets/33735005/bb693bd1-ca17-42dd-b26a-c738ba2c06bf)
+
 # ⚡️ Requirements:
 Neovim >= 0.8.0
 
