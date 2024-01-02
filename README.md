@@ -15,6 +15,8 @@ a Nerd Font (optional) - https://www.nerdfonts.com/font-downloads
 
 ```sudo dnf install nodejs```
 
+```sudo dnf install -y neovim python3-neovim```
+
 
 ### Run the following commands
 
