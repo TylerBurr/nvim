@@ -21,6 +21,12 @@ a Nerd Font (optional) - https://www.nerdfonts.com/font-downloads
 
 ```sudo dnf install tar```
 
+## lazygit - https://github.com/jesseduffield/lazygit
+```sudo dnf copr enable atim/lazygit -y```
+
+```sudo dnf install lazygit```
+
+
 
 ### Run the following commands
 
