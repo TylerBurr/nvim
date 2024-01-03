@@ -71,29 +71,29 @@ return {
     end
 
     -- configure html server
-    lspconfig["html"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
+    --lspconfig["html"].setup({
+    --  capabilities = capabilities,
+    --  on_attach = on_attach,
+    --})
 
     -- configure typescript server with plugin
-    lspconfig["tsserver"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
+    --lspconfig["tsserver"].setup({
+    --  capabilities = capabilities,
+    --  on_attach = on_attach,
+    --})
 
     -- configure css server
-    lspconfig["cssls"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
+    --lspconfig["cssls"].setup({
+    --  capabilities = capabilities,
+    --  on_attach = on_attach,
+    --})
 
     -- configure graphql language server
-    lspconfig["graphql"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-    })
+    --lspconfig["graphql"].setup({
+    --  capabilities = capabilities,
+    --  on_attach = on_attach,
+    --  filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+    --})
 
     -- configure python server
     lspconfig["pyright"].setup({
