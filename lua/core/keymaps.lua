@@ -6,7 +6,7 @@ local keymap = vim.keymap -- for conciseness
 
 keymap.set("n", "<leader>e", ":Neotree<CR>") -- toggle file explorer
 keymap.set("n", "<leader>t", ":ToggleTerm size=20<CR>") -- toggle terminal
-
+keymap.set("n", "<leader>gg", ":2TermExec direction=float cmd='lazygit'<CR>")
 
 
 local builtin = require('telescope.builtin')
